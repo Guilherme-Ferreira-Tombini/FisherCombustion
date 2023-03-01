@@ -1,0 +1,15 @@
+{
+  "name": "fisher-combustion",
+  "version": "1.0.0",
+  "description": "PWA para calcular consumo e gasto de dinheiro",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "serve ."
+  },
+  "author": "Guilherme Ferreira Tombini",
+  "license": "ISC",
+  "dependencies": {
+    "serve": "^14.2.0"
+  }
+}
