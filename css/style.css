@@ -32,9 +32,9 @@ header{
 }
 
 .texto{
-    margin-top: 45%;
-    margin-bottom: 55%;
-    padding: 30px;
+    margin-top: 53%;
+    margin-bottom: 47%;
+    padding: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -47,7 +47,7 @@ header{
 .introducao>h1{
     margin-top: -25px;
     width: 100%;
-    font-size: 74px;
+    font-size: 68px;
 }
 
 .introducao{
@@ -57,22 +57,23 @@ header{
 .paragrafo1{
     text-align: justify;
     margin-top: -20px;
-    font-size: 20px;
-    width: 85%;
+    font-size: 19px;
+    width: 80%;
 }
 
 .paragrafo2{
     text-align: justify;
     margin-top: 10px;
-    font-size: 20px;
-    width: 85%;
+    font-size: 19px;
+    width: 80%;
 }
 
 .botao{
-    margin-left: -5%;
-    width: 75px;
+    margin-top: -10px;
+    margin-left: -7%;
+    width: 65px;
     border-radius: 50px;
-    height: 75px;
+    height: 65px;
     background-color: #19324B;
     position: absolute;
     cursor: pointer;
@@ -146,8 +147,8 @@ footer{
 
 .barra{
     position:relative;
-    width: 17px;
-    height: 87%;
+    width: 14px;
+    height: 79%;
     border-radius: 5px;
     background-color: #19324B;
 }
