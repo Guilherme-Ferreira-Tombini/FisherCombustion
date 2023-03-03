@@ -1,5 +1,5 @@
 let cacheName = "fisher-combustion";
-let filesToCache = ["/", "/index.html", "/css/style.css", "/js/main.js", "/img"];
+let filesToCache = ["/", "./index.html", "./css/style.css", "./js/main.js", "./img", "./favicon.ico"];
 
 self.addEventListener("install", (e) =>{
     e.waitUntil(
