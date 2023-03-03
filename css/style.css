@@ -24,15 +24,23 @@ header{
     background-repeat: no-repeat;
 }
 
+.meio{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
 .texto{
-    margin-top: 6%;
-    margin-left: 40px;
+    margin-top: 45%;
+    margin-bottom: 55%;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-items: center;
-    width: 50%;
-    height: 410px;
+    width: 100%;
+    height: 70%;
     flex-wrap: wrap;
 }
 
@@ -43,22 +51,55 @@ header{
 }
 
 .introducao{
-    padding: 20px;
+    padding: 17px;
 }
 
 .paragrafo1{
+    text-align: justify;
     margin-top: -20px;
-    font-size: 22px;
+    font-size: 20px;
     width: 85%;
 }
 
 .paragrafo2{
+    text-align: justify;
     margin-top: 10px;
-    font-size: 22px;
+    font-size: 20px;
     width: 85%;
 }
 
-.container{
+.botao{
+    margin-left: -5%;
+    width: 75px;
+    border-radius: 50px;
+    height: 75px;
+    background-color: #19324B;
+    position: absolute;
+    cursor: pointer;
+    transition: all .5s;
+    border: 4px solid transparent;
+}
+
+.botao:hover{
+    border: 4px solid #136497;
+    border-radius: 50%;
+}
+
+.botao>img{
+    width: 100%;
+    height: 100%;
+}
+
+.container1{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/main.png');
+    background-size: 100% 100%;
+}
+
+.container2{
     display: flex;
     justify-content: center;
     width: 100%;
@@ -73,6 +114,7 @@ header{
     background-image: url('../img/imagem1.png');
     background-size: 100% 100%;
 }
+
 
 .form{
     width: 50%;
@@ -105,7 +147,14 @@ footer{
 .barra{
     position:relative;
     width: 17px;
-    height: 100%;
+    height: 87%;
     border-radius: 5px;
     background-color: #19324B;
+}
+
+@media (max-width:500px){
+    .meio{
+        display: none;
+    }
+    
 }
