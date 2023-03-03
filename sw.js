@@ -1,4 +1,4 @@
-let cacheName = "PWA-Consumo";
+let cacheName = "fisher-combustion";
 let filesToCache = ["/", "/index.html", "/css/style.css", "/js/main.js", "/img"];
 
 self.addEventListener("install", (e) =>{
