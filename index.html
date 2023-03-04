@@ -6,14 +6,15 @@
         <link rel="apple-touch-icon" href="img/pwa-icon-256.png" />
         <link rel="stylesheet" href="css/style.css" />
         <link rel="manifest" href="/manifest.json" />
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <!--viewport para designers responsivos (mobo), content é a configuração-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="white" />
     </head>
     <body class="fullscreen">
-        <header>
+        <header data-aos="fade">
     <div class="meio">
-        <div class="texto">
+        <div class="texto" data-aos="fade-up">
           <div class="barra"></div>
           <div class="introducao">
           <h1>Como está meu consumo diario?</h1>
@@ -33,18 +34,18 @@
         </header>
 
         <div class="container1" id="container1">
-            <div class="form">
+            <div class="form" data-aos="fade-down">
 
             </div>
-            <div class="imagem"></div>
+            <div class="imagem" data-aos="fade-up"></div>
         </div>
 
 
         <div class="container2">
-            <div class="imagem1">
+            <div class="imagem1" data-aos="fade-up">
 
             </div>
-            <div class="form1"></div>
+            <div class="form1" data-aos="fade-down"></div>
         </div>
         
 
@@ -54,5 +55,9 @@
 
         
         <script src="/js/main.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
     </body>
 </html>
