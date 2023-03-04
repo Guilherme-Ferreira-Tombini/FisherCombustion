@@ -16,6 +16,16 @@ html, .fullscreen {
     width: 100%;
 }
 
+::-webkit-scrollbar{
+    width: 7px;
+    background-color: #03071a;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background-image: linear-gradient(to bottom, #284b6e,#19324B);
+    border-radius: 10px;
+  }
+
 header{
     background-image: url('../img/header.png');
     width: 100%;
@@ -50,8 +60,14 @@ header{
     font-size: 68px;
 }
 
-.introducao{
+.introducao, .introducao2{
     padding: 17px;
+}
+
+.introducao2>h1{
+    margin-top: -14px;
+    width: 100%;
+    font-size: 43px;
 }
 
 .paragrafo1{
@@ -118,8 +134,37 @@ header{
 
 
 .form{
+    display: flex;
+    align-items: center;
     width: 50%;
     height: 100%;
+}
+
+.formulario{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    padding-left: 41px;
+    padding-right: 34px;
+    width: 100%;
+    height: 90%;
+}
+
+.inputs{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    padding: 17px;
+}
+
+.barra2{
+    position:relative;
+    width: 14px;
+    height: 97%;
+    border-radius: 5px;
+    background-color: #19324B;
 }
 
 .imagem1{
