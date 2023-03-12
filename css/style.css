@@ -67,7 +67,7 @@ header{
 .introducao2>h1{
     margin-top: -14px;
     width: 100%;
-    font-size: 43px;
+    font-size: 42px;
 }
 
 .paragrafo1{
@@ -126,6 +126,10 @@ header{
 }
 
 .imagem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
     width: 50%;
     height: 100%;
     background-image: url('../img/imagem1.png');
@@ -149,14 +153,13 @@ header{
     padding-left: 41px;
     padding-right: 34px;
     width: 100%;
-    height: 90%;
+    height: 82%;
 }
 
 .inputs{
-    width: 75%;
+    width: 79%;
     display: flex;
     flex-direction: column;
-    padding: 17px;
 }
 
 .barra2{
@@ -196,6 +199,170 @@ footer{
     height: 79%;
     border-radius: 5px;
     background-color: #19324B;
+}
+
+
+input {
+    font-size: 17px;
+    padding: 8px;
+    margin-bottom: 32px;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    background: transparent;
+    font-family: 'Jura', sans-serif;
+}
+
+input::placeholder{
+font-size: 13.2px;
+color: #C5C5C5;
+font-family: 'Jura', sans-serif;
+}
+
+.botoes{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.calcular{
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    background-color: #228712;
+    font-family: 'Jura', sans-serif;
+    border: #228712;
+    cursor: pointer;
+    font-size: 21px;
+    transition: all 0.5s;
+}
+
+.calcular:hover, .limpar:hover, #botaoo > button:hover{
+    transform: scale(1.1);
+    transition: all 0.5s;
+}
+
+.limpar{
+    color: white;
+    cursor: pointer;
+    background-color: #B40606;
+    border-radius: 12px;
+    font-size: 21px;
+    border: #B40606;
+    font-family: 'Jura', sans-serif;
+    padding: 15px;
+    transition: all 0.5s;
+}
+
+
+
+#tabela{
+    margin:13px;
+    background-color: #091C30;
+    border-radius: 48px;
+    width: 87%;
+}
+
+#resultado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#botaoo{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+#resultado > h3{
+    width: 100%;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+#botaoo > button{
+    margin: 10px;
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    background-color: #228712;
+    font-family: 'Jura', sans-serif;
+    border: #228712;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+
+.arquivoPDF{
+    background-color: #040B16;
+    width: 100%;
+    height: 1055px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    color: #FCFCF4;
+}
+
+.arquivoPDF > h1{
+    padding: 10px;
+    font-size: 47px;
+}
+
+.dados{
+width: 100%;
+height: 40%;
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #B40606;
+}
+
+.parte1{
+    width: 50%;
+    height: 100%;
+    background-color: #121812;
+}
+
+.parte2{
+    width: 50%;
+    height: 100%;
+    background-color: #517651;
+}
+
+.resultados{
+    width: 100%;
+    display: flex;
+align-items: center;
+justify-content: center;
+    height: 40%;
+    background-color: #534545;
+}
+
+.parte3{
+    width: 50%;
+    height: 100%;
+    background-color: #4b2892;
+}
+
+.parte4{
+    width: 50%;
+    height: 100%;
+    background-color: #278027;
+}
+
+.horario{
+    width: 100%;
+    height: 10%;
+    background-color: #e85c5c;
 }
 
 @media (max-width:500px){

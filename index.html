@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="css/style.css" />
         <link rel="manifest" href="/manifest.json" />
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js"></script>
         <!--viewport para designers responsivos (mobo), content é a configuração-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="theme-color" content="white" />
@@ -40,16 +41,27 @@
                     <div class="introducao2">
                         <h1>Consumo de combustivel por km percorrido e dinheiro gasto:</h1>
                         <div class="inputs">
-                            <input style="margin-bottom: 10px;" type="text">
-                            <input style="margin-bottom: 10px;" type="text">
-                            <input style="margin-bottom: 10px;" type="text">
-                            <input style="margin-bottom: 10px;" type="text">
+                            <input id="tanque" placeholder="Capacidade de litros do tanque (ex: 40)" type="text">
+                            <input id="rodados" placeholder="Quantos km foram rodados na viagem (caso tenha viajado)? (ex: 20, 17.50)" type="text">
+                            <input id="preco" placeholder="Quanto está custando o combustivel? (ex: 6.50, 7)" type="text">
+                            <input id="litro" placeholder="Quantos Km seu veiculo faz com 1 Litro? (ex: 20)" type="text">
+
+                            <div class="botoes">
+                              <button class="calcular" onclick="consumo_gasolina()">Calcular</button>
+                              <button class="limpar" onclick="limpar()">Limpar</button>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="imagem" data-aos="fade-up"></div>
+            <div class="imagem" data-aos="fade-up">
+                <div id="tabela">
+                <div id="resultado"></div>
+                <div id="botaoo"></div>
+            </div>
+            </div>
         </div>
 
 
